@@ -1,18 +1,25 @@
 # anagrams
-#function to check if two strings are anagrams 
+# Check if two words are anagrams 
 
-def check(string1, string2):
+    return True
+
+
+def find_anagram((word,anagram):
 	
-
-	if(sorted(string1)== sorted(string2)):
-		print("True ; They are anagrams")
+    if(sorted(word)== sorted(anagram)):
+        print("True ")
 	else:
-		print("False ; They are not anagrams")		
+
+        print("False ")		
 
 
 # recieve input from user
-string1 = input('please enter the first word :')
-string2 = input('please enter the second word :')
+word = input('please enter the first word :')
+anagram = input('please enter the anagram :')
 
 
 check(string1, string2)
+# Example:
+# find_anagrams("hello", "check") --> False
+# find_anagrams("below", "elbow") --> True
+
